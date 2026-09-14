@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int edad;
+    bool VIP;
+    cin >> edad >> VIP;
+    bool Ingresa = edad >= 18 && VIP;
+    cout << Ingresa;
+    return 0;
+}
