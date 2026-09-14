@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "ingrese dos numeros: ";
+    int num1, num2;
+    bool prim;
+    cin >> num1 >> num2;
+    prim = (num1 >= num2);
+    cout << "mayor: " << (num1 * prim + num2 * !prim) << endl;
+    cout << "menor: " << (num2 * prim + num1 * !prim) << endl;
+}
