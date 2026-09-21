@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int N, M, A;
+    cout << "ingrese tres números para adivinar si ella te ama o no\n";
+    cin >> N >> M >> A;
+    if (N == M && M == A && N == A)
+    {
+        cout << "ella te ama\n";
+    }
+    else
+    {
+        cout << "ella no te ama\n";
+    }
+    return 0;
+}
