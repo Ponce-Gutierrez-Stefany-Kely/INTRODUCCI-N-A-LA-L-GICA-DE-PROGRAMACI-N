@@ -6,12 +6,8 @@ using namespace std;
 int main() {
     string p1, p2, p3;
 
-    // Leer las tres palabras
     cin >> p1 >> p2 >> p3;
 
-    // Clasificación utilizando operadores lógicos (&&)
-
-    // Vertebrados
     if (p1 == "vertebrado" && p2 == "ave" && p3 == "carnivoro") {
         cout << "aguia" << endl;
     } 
@@ -25,7 +21,6 @@ int main() {
         cout << "vaca" << endl;
     } 
 
-    // Invertebrados
     else if (p1 == "invertebrado" && p2 == "inseto" && p3 == "hematofago") {
         cout << "pulga" << endl;
     } 
