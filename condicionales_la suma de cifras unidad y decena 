@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Digite un numero entero de dos digitos: ";
+    cin >> num;
+
+    int absNum = abs(num);
+
+    if (absNum >= 10 && absNum <= 99) {
+        int dig1 = absNum / 10;
+        int dig2 = absNum % 10;
+        int suma = dig1 + dig2;
+        cout << "La suma de los digitos es: " << suma << endl;
+    } else {
+        cout << "El numero ingresado no es de dos digitos." << endl;
+    }
+
+    return 0;
+}
