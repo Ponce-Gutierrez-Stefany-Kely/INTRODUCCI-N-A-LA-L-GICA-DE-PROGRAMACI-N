@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Digite un numero entero de tres digitos: ";
+    cin >> num;
+
+    int absNum = abs(num);
+
+    if (absNum >= 100 && absNum <= 999) {
+        int d1 = absNum / 100;
+        int d2 = (absNum / 10) % 10;
+        int d3 = absNum % 10;
+        int suma = d1 + d2 + d3;
+        cout << "La suma de los digitos es: " << suma << endl;
+    } else {
+        cout << "El numero no tiene tres digitos." << endl;
+    }
+
+    return 0;
+}
