@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Digite un numero entero de cinco digitos: ";
+    cin >> num;
+
+    int absNum = abs(num);
+
+    if (absNum >= 10000 && absNum <= 99999) {
+        int d1 = absNum / 10000;
+        int d2 = (absNum / 1000) % 10;
+        int d3 = (absNum / 100) % 10;
+        int d4 = (absNum / 10) % 10;
+        int d5 = absNum % 10;
+
+        if (d1 == d5 && d2 == d4) {
+            cout << "El numero es capicuo." << endl;
+        } else {
+            cout << "El numero NO es capicuo." << endl;
+        }
+    } else {
+        cout << "Numero fuera de rango." << endl;
+    }
+
+    return 0;
+}
