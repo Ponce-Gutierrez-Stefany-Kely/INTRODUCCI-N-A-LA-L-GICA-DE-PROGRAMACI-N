@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Digite un numero entero: ";
+    cin >> num;
+
+    if (num % 7 == 0) {
+        cout << "El numero es multiplo de 7." << endl;
+    } else {
+        cout << "El numero NO es multiplo de 7." << endl;
+    }
+
+    return 0;
+}
