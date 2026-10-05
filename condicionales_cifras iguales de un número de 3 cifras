@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int num;
+    cout << "Digite un numero entero de tres digitos: ";
+    cin >> num;
+
+    int absNum = abs(num);
+
+    if (absNum >= 100 && absNum <= 999) {
+        int d1 = absNum / 100;
+        int d2 = (absNum / 10) % 10;
+        int d3 = absNum % 10;
+
+        if (d1 == d2 + d3 || d2 == d1 + d3 || d3 == d1 + d2) {
+            cout << "Uno de sus digitos es igual a la suma de los otros dos." << endl;
+        } else {
+            cout << "Ninguno de los digitos es igual a la suma de los otros dos." << endl;
+        }
+    } else {
+        cout << "Numero fuera de rango." << endl;
+    }
+
+    return 0;
+}
