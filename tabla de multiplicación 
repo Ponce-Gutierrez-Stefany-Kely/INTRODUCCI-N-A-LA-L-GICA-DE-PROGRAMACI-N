@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int n,num;
+cin>>n>>num;
+cout<<"\n";
+int i=1;
+    for (;i <=n;i++)
+   {
+    cout<<i<<" X "<<num<<"= "<< i*num <<"\n";
+   }
+   return 0;
+}
