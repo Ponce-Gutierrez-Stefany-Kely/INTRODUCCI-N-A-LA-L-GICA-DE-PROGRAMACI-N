@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+int n;
+cin>>n;
+cout<<"\n";
+int i=1,A=0;
+    for (;i <=n;i++)
+   {
+    A=A+i;
+   }
+   cout<<A;
+   return 0;
+}
