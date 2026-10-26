@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main () {
+    int n, x;
+    double s = 0, f = 1;
+    int i = 0;
+    cin >> x>> n;
+    while (i <= n) {
+        int fi = 1;
+        while (fi <= n) {
+            f = f*fi;
+            fi++;
+        }
+        s = s + (pow(x, i)/f);
+        i++;
+    }
+    cout << s << endl;
+    return 0;
+}
