@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int i=1,n, suma = 0;
+ while (suma <=1000)
+ {
+  cin>>n;
+  suma=suma+n;
+  cout<<suma<<" ";
+ }
+return 0;
+}
